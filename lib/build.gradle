@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
-
-apply from: 'pushMaven.gradle'
+//apply from: 'pushMaven.gradle'
 
 android {
     compileSdkVersion 22
@@ -10,6 +9,12 @@ android {
         minSdkVersion 14
         targetSdkVersion 22
         versionCode Integer.parseInt(new Date().format('yyyyMMddHH'))
-        versionName VERSION_NAME
+        versionName "3.0.0"
     }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
 }
